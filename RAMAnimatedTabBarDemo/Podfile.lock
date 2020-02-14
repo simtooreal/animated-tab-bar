@@ -1,0 +1,20 @@
+PODS:
+  - ContactsKit (2.1.2)
+  - RAMAnimatedTabBarController (5.1.0)
+
+DEPENDENCIES:
+  - ContactsKit
+  - RAMAnimatedTabBarController
+
+SPEC REPOS:
+  trunk:
+    - ContactsKit
+    - RAMAnimatedTabBarController
+
+SPEC CHECKSUMS:
+  ContactsKit: 471fa5135b34c09708b2658201e30552b555379a
+  RAMAnimatedTabBarController: b5c821298071fded801532216ad8a24394f89859
+
+PODFILE CHECKSUM: 66d23b446ea73b04778e4c40e23fd99cdc05c643
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B8024BA3497BB50E9DB3499D0DBBA0 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88B2C26DD6B2E588CE54B4DF7F33BC /* Collection+Extensions.swift */; };
+		0A068058156930CA173D486703D152F0 /* CKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7692B4B72D866B23B643D06FEEF0C7 /* CKLabel.m */; };
+		22DE66B4CD7C9281D4CD35A2BEF6D44C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F927D0A0063F7A5D861383D1856013 /* Foundation.framework */; };
+		26188D2EEE660311667A0F7A20794FD4 /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F542FB504B2CE612F095DD6800F892 /* RAMItemAnimationProtocol.swift */; };
+		283C0F3CCDE3A80FBD8A23F5EEB0FEB0 /* CKAddress_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 59941549FEE1D32C8B44163F3CBD9992 /* CKAddress_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DF1E84DE5DE6E1C05D9B894259CE537 /* CKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = AE44C0D4F83D9D4E690959553B7C38B5 /* CKMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FD27AE2A2BF85C62333978A2B61D7AE /* CKSocialProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0735047D1A6DBD22046DF9441BE4BDA4 /* CKSocialProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FF61E9FB2890AE86632CE71711622D /* Pods-RAMAnimatedTabBarDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C965C3959ED0CFF1A763A4D7B29CC0 /* Pods-RAMAnimatedTabBarDemo-dummy.m */; };
+		38A277D0E644508EE962E1C52950D17A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F927D0A0063F7A5D861383D1856013 /* Foundation.framework */; };
+		39F67E8B4CDF4B4973C417952A0263AE /* ContactsKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C62950F48C9D9247D78F28C6282F0D9F /* ContactsKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ABE665BE39A9C90A8A9E5E003A51228 /* CKLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895867159539121CF7A04D97B9908FC9 /* CKLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4413F2E387D76523F69C3507C4335F49 /* CKEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 51593F824E6FAFE288E144F917E98FBE /* CKEmail.m */; };
+		5C849FBED09095F3172F21102B529FE2 /* RAMAnimatedTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C362DD090A5979F4240208D33D04B46 /* RAMAnimatedTabBarController-dummy.m */; };
+		5D92897DF72C83270731AB75E7FF44C6 /* CKAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 150D79BC2D240D4300D327EAD1EF6279 /* CKAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DBDF38890137B49DC6EE62AF0DE44C5 /* RAMAnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52683FD7DAFDC0934D24FFAE2F178084 /* RAMAnimatedTabBarController.swift */; };
+		5F7531B6D514EA9F2E0A0D3F22CE58D4 /* CKSocialProfile_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF2A1BD7E0EB5ED44C5A62A52451B60 /* CKSocialProfile_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F90D850F80A4C6ADAB7C07A8A42DA33 /* CKContact.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0530A71C25ECD9F6C7935033349A87 /* CKContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		622C0E0BAB80E5ABF29EAE5A5E7D4325 /* CKEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F0FDB694085F1EAC18401867BB08C8 /* CKEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63627F5031F565E57FFD004382135EF0 /* RAMAnimatedTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B805BD5E5DBF025F8C0B6A6395654C09 /* RAMAnimatedTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F8C2756CC988E6A24FF920EC52CF67 /* CKDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B25DFECBC05C420E00446B8BC4AD5D97 /* CKDate.m */; };
+		67EF4E151180ACB08AC2211DD6E7DCD4 /* Pods-RAMAnimatedTabBarDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC99B5D3CC0C7B4627BB61B32B88995 /* Pods-RAMAnimatedTabBarDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DF0B4E59B3896D5CE6061AAF88DA4B7 /* RAMRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AE9936C62D21A3A494089303A812E2 /* RAMRotationAnimation.swift */; };
+		762B540C45A6E61DA59667D4B02C6FAA /* CKLabel_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAEC9BF31EDFAA0A61B84A71E3F8FC1 /* CKLabel_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76B113CC2AF2193415B3E64D2A08C97F /* CKAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C84523ECA5A989CEE71D6C06FBBEA365 /* CKAddressBook.m */; };
+		7CAF24F71590BE58001C071E91AF92F1 /* ContactsKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E249CA4E1A1F836962E1D4F1C0AF4C /* ContactsKit-dummy.m */; };
+		822E338DDC56D76978D4042F39A9694B /* CKPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = D224CAADF46A037F9ED8687C9CBF7251 /* CKPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		855F93D1DA07D319F35AF850DEF83089 /* CKSocialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = ED891D2283449E2A487E50446195E9FA /* CKSocialProfile.m */; };
+		889AB44F501E15C1919E168DB3330CEF /* CKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D34B5383DE2317431DE38EEE5A6C8 /* CKContact.m */; };
+		8C4FCCE00F6049564B9AC60E2E19D78A /* CKAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C72503A82DBC447AB2A62CD1CAA200 /* CKAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC2C7F9550A15323B11A8DCC1A5C505 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EB7AB038CB53B4E4D30274F4EC027F /* AddressBook.framework */; };
+		9083623D9FE447DDAC23F3D9CEE8BC10 /* RAMAnimatedTabBarController+BottomLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCCE3168460DA77CC669ACC0661BF6 /* RAMAnimatedTabBarController+BottomLine.swift */; };
+		98A28394E6345DEF687BF7A407C245A1 /* CKAddressBook_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE0B3F16EAB9DD29F102735B6B85655 /* CKAddressBook_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99B5F9BD4CD9E7B7B1FA118312767640 /* NSBundle+CKLocalizatoin.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A1980B1B8DD04ACA3B78D7B7DF9811 /* NSBundle+CKLocalizatoin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C40F9A782F15BACA7B8B55E7E0885C6 /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F12E6AA868950F36FDECE690F5699 /* RAMBadge.swift */; };
+		A87F5B26BCD350A7DE64728A7C6E7B01 /* CKAutoCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AFF25782A2C6B857645BCB29096476 /* CKAutoCoder.m */; };
+		AC37F45C546CE7AD12A7980C6D55DF4B /* CKMessenger_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D64C6C453B43BAB9C81E0B7E2164C3 /* CKMessenger_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AFD985A8844D6713B3287F52AB39042C /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B93A9FF3A0F9F5C95C4725E55F061 /* RAMFrameItemAnimation.swift */; };
+		B36DAD8B5D2C612E5F2536E88DC33318 /* ContactsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E869E12E097C20A3874EA2D24800EAB6 /* ContactsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8359A965A3207FD3382506AAD3364E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F927D0A0063F7A5D861383D1856013 /* Foundation.framework */; };
+		C8E5CDC2044DDA1809D80BA1B58C47BF /* CKMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C37C243D33772080BBAF7C9A615BBC /* CKMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C965118D2CA9135FE38D9BDB276083C4 /* CKURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A578810EE6108398ECBFF7401419BC3 /* CKURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBDABDA5B626DB7E934BC53C59529FF4 /* ContactsKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75CC124FADDB68E2129348E118C5F20C /* ContactsKit.bundle */; };
+		D080F48BA1D85DF550865951F0AD679E /* CKContact_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D8235ED1AA11E0383E8FDEB094523392 /* CKContact_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1626F6B3818A61F4684DC04B9C20C74 /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461E3461AD37C196357770D1420479D /* RAMTransitionItemAnimations.swift */; };
+		D240991D247747660708779B18C1330D /* RAMAnimatedTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F9805465F9AC3B99CDA5CB5F37E9FD /* RAMAnimatedTabBarItem.swift */; };
+		D7B292DE6D0C2CA1A90C2F4E606064FB /* CKMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AA5D3918224679274959D1BEB8A54 /* CKMessenger.m */; };
+		D8E88B962F43C27AE8C6F734DBD11D75 /* CKAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E870C1F0B76017B50B0FA2366781C /* CKAddress.m */; };
+		DA28252D976B465BE2CDB71A2A46339F /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B225BD80D06168127ADF8FAFE2AD7E /* RAMFumeAnimation.swift */; };
+		DDD81F335FF857EB32CE84BBAD09FFEA /* CKURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D31FE83E22B9BD0FA44877D3832CE /* CKURL.m */; };
+		EA72D965C4B181D7CA994F4664BC7436 /* CKPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = F217FA69403726B8AE163917B29873CD /* CKPhone.m */; };
+		EDCBFA9B5A1C278B4C0EDBB3FF5B24B4 /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC077DF1196CE5BD8AE5332DDF05A7D /* RAMBounceAnimation.swift */; };
+		F0D1E0AB27FBEBF0E6D2FFC9FB4A53E7 /* CKAutoCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F87A11DD83EE565611A05CE76F1978 /* CKAutoCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6014ACF2814A59EEB5C72045ECDBF71 /* NSBundle+CKLocalizatoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 47822BD119154E56892C8057B141E291 /* NSBundle+CKLocalizatoin.m */; };
+		FD1680FBFF7007771F8FF99AA9D75155 /* CKDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 916FF000802E0E1C9E545884628D2C94 /* CKDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		207BDCD107BB28B9A0717F0F1F83E248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED4DEF356A163E50925101C3C7C0FB9;
+			remoteInfo = RAMAnimatedTabBarController;
+		};
+		A464428E23D4D99247D06A3D01A7CD68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFE547136E4077CADC492BBF47CB6E9D;
+			remoteInfo = ContactsKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C965C3959ED0CFF1A763A4D7B29CC0 /* Pods-RAMAnimatedTabBarDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RAMAnimatedTabBarDemo-dummy.m"; sourceTree = "<group>"; };
+		068B4FD1C0DB8CDD0F723132338A636B /* Pods-RAMAnimatedTabBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RAMAnimatedTabBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0735047D1A6DBD22046DF9441BE4BDA4 /* CKSocialProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKSocialProfile.h; path = ContactsKit/Public/CKSocialProfile.h; sourceTree = "<group>"; };
+		0F7692B4B72D866B23B643D06FEEF0C7 /* CKLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKLabel.m; path = ContactsKit/Public/CKLabel.m; sourceTree = "<group>"; };
+		102B93A9FF3A0F9F5C95C4725E55F061 /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFrameItemAnimation.swift; path = RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
+		150D79BC2D240D4300D327EAD1EF6279 /* CKAddressBook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKAddressBook.h; path = ContactsKit/Public/CKAddressBook.h; sourceTree = "<group>"; };
+		230E3AE353EF14D54F7F5F87EF5B6A91 /* ContactsKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContactsKit-prefix.pch"; sourceTree = "<group>"; };
+		23B225BD80D06168127ADF8FAFE2AD7E /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFumeAnimation.swift; path = RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift; sourceTree = "<group>"; };
+		26AD9250F885CCFCDEC8D8459E57EFD9 /* Pods-RAMAnimatedTabBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RAMAnimatedTabBarDemo.release.xcconfig"; sourceTree = "<group>"; };
+		31CEBE2E6E42FBA6D5806A8B29F6933C /* ContactsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ContactsKit-Info.plist"; sourceTree = "<group>"; };
+		35EB7AB038CB53B4E4D30274F4EC027F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		36AE9936C62D21A3A494089303A812E2 /* RAMRotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMRotationAnimation.swift; path = RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift; sourceTree = "<group>"; };
+		36CBAD632374818EDA83322288D46B67 /* Pods-RAMAnimatedTabBarDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RAMAnimatedTabBarDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37D64C6C453B43BAB9C81E0B7E2164C3 /* CKMessenger_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKMessenger_Private.h; path = ContactsKit/Private/CKMessenger_Private.h; sourceTree = "<group>"; };
+		3FC077DF1196CE5BD8AE5332DDF05A7D /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBounceAnimation.swift; path = RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift; sourceTree = "<group>"; };
+		3FE0B3F16EAB9DD29F102735B6B85655 /* CKAddressBook_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKAddressBook_Private.h; path = ContactsKit/Private/CKAddressBook_Private.h; sourceTree = "<group>"; };
+		470D31FE83E22B9BD0FA44877D3832CE /* CKURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKURL.m; path = ContactsKit/Public/CKURL.m; sourceTree = "<group>"; };
+		47822BD119154E56892C8057B141E291 /* NSBundle+CKLocalizatoin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+CKLocalizatoin.m"; path = "ContactsKit/Private/NSBundle+CKLocalizatoin.m"; sourceTree = "<group>"; };
+		49C681FB219669B9C1ECA0023BD90F13 /* ContactsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ContactsKit.framework; path = ContactsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A578810EE6108398ECBFF7401419BC3 /* CKURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKURL.h; path = ContactsKit/Public/CKURL.h; sourceTree = "<group>"; };
+		4B9E870C1F0B76017B50B0FA2366781C /* CKAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKAddress.m; path = ContactsKit/Public/CKAddress.m; sourceTree = "<group>"; };
+		51593F824E6FAFE288E144F917E98FBE /* CKEmail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKEmail.m; path = ContactsKit/Public/CKEmail.m; sourceTree = "<group>"; };
+		52683FD7DAFDC0934D24FFAE2F178084 /* RAMAnimatedTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMAnimatedTabBarController.swift; path = RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift; sourceTree = "<group>"; };
+		52F927D0A0063F7A5D861383D1856013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5461E3461AD37C196357770D1420479D /* RAMTransitionItemAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMTransitionItemAnimations.swift; path = RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift; sourceTree = "<group>"; };
+		58F542FB504B2CE612F095DD6800F892 /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMItemAnimationProtocol.swift; path = RAMAnimatedTabBarController/RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
+		592B9DA951C7465299EF4A1D9E95077F /* RAMAnimatedTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMAnimatedTabBarController.xcconfig; sourceTree = "<group>"; };
+		59941549FEE1D32C8B44163F3CBD9992 /* CKAddress_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKAddress_Private.h; path = ContactsKit/Private/CKAddress_Private.h; sourceTree = "<group>"; };
+		5CCCCE3168460DA77CC669ACC0661BF6 /* RAMAnimatedTabBarController+BottomLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RAMAnimatedTabBarController+BottomLine.swift"; path = "RAMAnimatedTabBarController/BottomLine/RAMAnimatedTabBarController+BottomLine.swift"; sourceTree = "<group>"; };
+		5DAEC9BF31EDFAA0A61B84A71E3F8FC1 /* CKLabel_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKLabel_Private.h; path = ContactsKit/Private/CKLabel_Private.h; sourceTree = "<group>"; };
+		6803A26D713572B4FCF211333F946956 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RAMAnimatedTabBarController.framework; path = RAMAnimatedTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F0FDB694085F1EAC18401867BB08C8 /* CKEmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKEmail.h; path = ContactsKit/Public/CKEmail.h; sourceTree = "<group>"; };
+		6A3D34B5383DE2317431DE38EEE5A6C8 /* CKContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKContact.m; path = ContactsKit/Public/CKContact.m; sourceTree = "<group>"; };
+		6A6F12E6AA868950F36FDECE690F5699 /* RAMBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBadge.swift; path = RAMAnimatedTabBarController/RAMBadge/RAMBadge.swift; sourceTree = "<group>"; };
+		6BF2A1BD7E0EB5ED44C5A62A52451B60 /* CKSocialProfile_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKSocialProfile_Private.h; path = ContactsKit/Private/CKSocialProfile_Private.h; sourceTree = "<group>"; };
+		6C362DD090A5979F4240208D33D04B46 /* RAMAnimatedTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMAnimatedTabBarController-dummy.m"; sourceTree = "<group>"; };
+		6EC99B5D3CC0C7B4627BB61B32B88995 /* Pods-RAMAnimatedTabBarDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RAMAnimatedTabBarDemo-umbrella.h"; sourceTree = "<group>"; };
+		74B09C96AED22B27AF1444556E557A04 /* Pods-RAMAnimatedTabBarDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RAMAnimatedTabBarDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		75CC124FADDB68E2129348E118C5F20C /* ContactsKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ContactsKit.bundle; path = ContactsKit/ContactsKit.bundle; sourceTree = "<group>"; };
+		78F9805465F9AC3B99CDA5CB5F37E9FD /* RAMAnimatedTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMAnimatedTabBarItem.swift; path = RAMAnimatedTabBarController/RAMAnimatedTabBarItem.swift; sourceTree = "<group>"; };
+		79F87A11DD83EE565611A05CE76F1978 /* CKAutoCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKAutoCoder.h; path = ContactsKit/Private/CKAutoCoder.h; sourceTree = "<group>"; };
+		84C72503A82DBC447AB2A62CD1CAA200 /* CKAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKAddress.h; path = ContactsKit/Public/CKAddress.h; sourceTree = "<group>"; };
+		895867159539121CF7A04D97B9908FC9 /* CKLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKLabel.h; path = ContactsKit/Public/CKLabel.h; sourceTree = "<group>"; };
+		8B88B2C26DD6B2E588CE54B4DF7F33BC /* Collection+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extensions.swift"; path = "RAMAnimatedTabBarController/Utilities/Collection+Extensions.swift"; sourceTree = "<group>"; };
+		916FF000802E0E1C9E545884628D2C94 /* CKDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKDate.h; path = ContactsKit/Public/CKDate.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3A1980B1B8DD04ACA3B78D7B7DF9811 /* NSBundle+CKLocalizatoin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+CKLocalizatoin.h"; path = "ContactsKit/Private/NSBundle+CKLocalizatoin.h"; sourceTree = "<group>"; };
+		AE44C0D4F83D9D4E690959553B7C38B5 /* CKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKMacros.h; path = ContactsKit/Private/CKMacros.h; sourceTree = "<group>"; };
+		B0C16D329DF78D6C55EFC4BCDD1DB00A /* ContactsKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ContactsKit.xcconfig; sourceTree = "<group>"; };
+		B1AFF25782A2C6B857645BCB29096476 /* CKAutoCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKAutoCoder.m; path = ContactsKit/Private/CKAutoCoder.m; sourceTree = "<group>"; };
+		B25DFECBC05C420E00446B8BC4AD5D97 /* CKDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKDate.m; path = ContactsKit/Public/CKDate.m; sourceTree = "<group>"; };
+		B805BD5E5DBF025F8C0B6A6395654C09 /* RAMAnimatedTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		BE0530A71C25ECD9F6C7935033349A87 /* CKContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKContact.h; path = ContactsKit/Public/CKContact.h; sourceTree = "<group>"; };
+		C3CF88775B356333D731E5D3ADAD58E1 /* Pods-RAMAnimatedTabBarDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RAMAnimatedTabBarDemo-frameworks.sh"; sourceTree = "<group>"; };
+		C62950F48C9D9247D78F28C6282F0D9F /* ContactsKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContactsKit-umbrella.h"; sourceTree = "<group>"; };
+		C84523ECA5A989CEE71D6C06FBBEA365 /* CKAddressBook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKAddressBook.m; path = ContactsKit/Public/CKAddressBook.m; sourceTree = "<group>"; };
+		D224CAADF46A037F9ED8687C9CBF7251 /* CKPhone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKPhone.h; path = ContactsKit/Public/CKPhone.h; sourceTree = "<group>"; };
+		D742BA7130BE237D0BFF49EC8EFF5294 /* Pods_RAMAnimatedTabBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RAMAnimatedTabBarDemo.framework; path = "Pods-RAMAnimatedTabBarDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E249CA4E1A1F836962E1D4F1C0AF4C /* ContactsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ContactsKit-dummy.m"; sourceTree = "<group>"; };
+		D8235ED1AA11E0383E8FDEB094523392 /* CKContact_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKContact_Private.h; path = ContactsKit/Private/CKContact_Private.h; sourceTree = "<group>"; };
+		DBB454731680B1F40A87BC2DF7D86328 /* Pods-RAMAnimatedTabBarDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RAMAnimatedTabBarDemo-Info.plist"; sourceTree = "<group>"; };
+		DD6F73C85072EBBC99B97A8F44F26940 /* RAMAnimatedTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		E3E029CE8DCB109E25FDB1F80F8B4BC4 /* RAMAnimatedTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RAMAnimatedTabBarController-Info.plist"; sourceTree = "<group>"; };
+		E869E12E097C20A3874EA2D24800EAB6 /* ContactsKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ContactsKit.h; path = ContactsKit/Public/ContactsKit.h; sourceTree = "<group>"; };
+		E99D22524415C619DC3F71A232C68D66 /* Pods-RAMAnimatedTabBarDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RAMAnimatedTabBarDemo.modulemap"; sourceTree = "<group>"; };
+		EA04BEDD863CC6DE41D0BED4984EAD28 /* ContactsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ContactsKit.modulemap; sourceTree = "<group>"; };
+		ED891D2283449E2A487E50446195E9FA /* CKSocialProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKSocialProfile.m; path = ContactsKit/Public/CKSocialProfile.m; sourceTree = "<group>"; };
+		F1EB16B7AA2A55D98E8294F489526EA6 /* RAMAnimatedTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RAMAnimatedTabBarController.modulemap; sourceTree = "<group>"; };
+		F217FA69403726B8AE163917B29873CD /* CKPhone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKPhone.m; path = ContactsKit/Public/CKPhone.m; sourceTree = "<group>"; };
+		F5C37C243D33772080BBAF7C9A615BBC /* CKMessenger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKMessenger.h; path = ContactsKit/Public/CKMessenger.h; sourceTree = "<group>"; };
+		FC3AA5D3918224679274959D1BEB8A54 /* CKMessenger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKMessenger.m; path = ContactsKit/Public/CKMessenger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14D33FC5AC2BFA2B0AD543EC397C51AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8359A965A3207FD3382506AAD3364E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25ED48AA6A4A516D7706C32398382518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE66B4CD7C9281D4CD35A2BEF6D44C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493B8273D308BA3901765D3153611F13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC2C7F9550A15323B11A8DCC1A5C505 /* AddressBook.framework in Frameworks */,
+				38A277D0E644508EE962E1C52950D17A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043F3573155B0098047CEC7EFDD031CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75CC124FADDB68E2129348E118C5F20C /* ContactsKit.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECDFA9B76CBD39AEB5C05DEC65CEE712 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49617BD830EBC9F92049E97DC43320F1 /* Pods-RAMAnimatedTabBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E99D22524415C619DC3F71A232C68D66 /* Pods-RAMAnimatedTabBarDemo.modulemap */,
+				36CBAD632374818EDA83322288D46B67 /* Pods-RAMAnimatedTabBarDemo-acknowledgements.markdown */,
+				74B09C96AED22B27AF1444556E557A04 /* Pods-RAMAnimatedTabBarDemo-acknowledgements.plist */,
+				00C965C3959ED0CFF1A763A4D7B29CC0 /* Pods-RAMAnimatedTabBarDemo-dummy.m */,
+				C3CF88775B356333D731E5D3ADAD58E1 /* Pods-RAMAnimatedTabBarDemo-frameworks.sh */,
+				DBB454731680B1F40A87BC2DF7D86328 /* Pods-RAMAnimatedTabBarDemo-Info.plist */,
+				6EC99B5D3CC0C7B4627BB61B32B88995 /* Pods-RAMAnimatedTabBarDemo-umbrella.h */,
+				068B4FD1C0DB8CDD0F723132338A636B /* Pods-RAMAnimatedTabBarDemo.debug.xcconfig */,
+				26AD9250F885CCFCDEC8D8459E57EFD9 /* Pods-RAMAnimatedTabBarDemo.release.xcconfig */,
+			);
+			name = "Pods-RAMAnimatedTabBarDemo";
+			path = "Target Support Files/Pods-RAMAnimatedTabBarDemo";
+			sourceTree = "<group>";
+		};
+		5E6E9EFD14F23B92C8A860DFD9896A95 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA04BEDD863CC6DE41D0BED4984EAD28 /* ContactsKit.modulemap */,
+				B0C16D329DF78D6C55EFC4BCDD1DB00A /* ContactsKit.xcconfig */,
+				D7E249CA4E1A1F836962E1D4F1C0AF4C /* ContactsKit-dummy.m */,
+				31CEBE2E6E42FBA6D5806A8B29F6933C /* ContactsKit-Info.plist */,
+				230E3AE353EF14D54F7F5F87EF5B6A91 /* ContactsKit-prefix.pch */,
+				C62950F48C9D9247D78F28C6282F0D9F /* ContactsKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ContactsKit";
+			sourceTree = "<group>";
+		};
+		7915CCBA3A6A03CBC3474DAA35A893DD /* RAMAnimatedTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				8B88B2C26DD6B2E588CE54B4DF7F33BC /* Collection+Extensions.swift */,
+				52683FD7DAFDC0934D24FFAE2F178084 /* RAMAnimatedTabBarController.swift */,
+				5CCCCE3168460DA77CC669ACC0661BF6 /* RAMAnimatedTabBarController+BottomLine.swift */,
+				78F9805465F9AC3B99CDA5CB5F37E9FD /* RAMAnimatedTabBarItem.swift */,
+				6A6F12E6AA868950F36FDECE690F5699 /* RAMBadge.swift */,
+				3FC077DF1196CE5BD8AE5332DDF05A7D /* RAMBounceAnimation.swift */,
+				102B93A9FF3A0F9F5C95C4725E55F061 /* RAMFrameItemAnimation.swift */,
+				23B225BD80D06168127ADF8FAFE2AD7E /* RAMFumeAnimation.swift */,
+				58F542FB504B2CE612F095DD6800F892 /* RAMItemAnimationProtocol.swift */,
+				36AE9936C62D21A3A494089303A812E2 /* RAMRotationAnimation.swift */,
+				5461E3461AD37C196357770D1420479D /* RAMTransitionItemAnimations.swift */,
+				F0EF5408BA1BD8E8974E6E2B1784C6AA /* Support Files */,
+			);
+			name = RAMAnimatedTabBarController;
+			path = RAMAnimatedTabBarController;
+			sourceTree = "<group>";
+		};
+		A45030F664A5D34E1DC33DFD0E6744A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49C681FB219669B9C1ECA0023BD90F13 /* ContactsKit.framework */,
+				D742BA7130BE237D0BFF49EC8EFF5294 /* Pods_RAMAnimatedTabBarDemo.framework */,
+				6803A26D713572B4FCF211333F946956 /* RAMAnimatedTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1423B50B43B982BB71581794BC1FE03 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49617BD830EBC9F92049E97DC43320F1 /* Pods-RAMAnimatedTabBarDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C19FB8798C2E4A904852EE8FA5AAE839 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB0ED27B19179AFCE8A735512A7D86E1 /* ContactsKit */,
+				7915CCBA3A6A03CBC3474DAA35A893DD /* RAMAnimatedTabBarController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB0ED27B19179AFCE8A735512A7D86E1 /* ContactsKit */ = {
+			isa = PBXGroup;
+			children = (
+				84C72503A82DBC447AB2A62CD1CAA200 /* CKAddress.h */,
+				4B9E870C1F0B76017B50B0FA2366781C /* CKAddress.m */,
+				59941549FEE1D32C8B44163F3CBD9992 /* CKAddress_Private.h */,
+				150D79BC2D240D4300D327EAD1EF6279 /* CKAddressBook.h */,
+				C84523ECA5A989CEE71D6C06FBBEA365 /* CKAddressBook.m */,
+				3FE0B3F16EAB9DD29F102735B6B85655 /* CKAddressBook_Private.h */,
+				79F87A11DD83EE565611A05CE76F1978 /* CKAutoCoder.h */,
+				B1AFF25782A2C6B857645BCB29096476 /* CKAutoCoder.m */,
+				BE0530A71C25ECD9F6C7935033349A87 /* CKContact.h */,
+				6A3D34B5383DE2317431DE38EEE5A6C8 /* CKContact.m */,
+				D8235ED1AA11E0383E8FDEB094523392 /* CKContact_Private.h */,
+				916FF000802E0E1C9E545884628D2C94 /* CKDate.h */,
+				B25DFECBC05C420E00446B8BC4AD5D97 /* CKDate.m */,
+				68F0FDB694085F1EAC18401867BB08C8 /* CKEmail.h */,
+				51593F824E6FAFE288E144F917E98FBE /* CKEmail.m */,
+				895867159539121CF7A04D97B9908FC9 /* CKLabel.h */,
+				0F7692B4B72D866B23B643D06FEEF0C7 /* CKLabel.m */,
+				5DAEC9BF31EDFAA0A61B84A71E3F8FC1 /* CKLabel_Private.h */,
+				AE44C0D4F83D9D4E690959553B7C38B5 /* CKMacros.h */,
+				F5C37C243D33772080BBAF7C9A615BBC /* CKMessenger.h */,
+				FC3AA5D3918224679274959D1BEB8A54 /* CKMessenger.m */,
+				37D64C6C453B43BAB9C81E0B7E2164C3 /* CKMessenger_Private.h */,
+				D224CAADF46A037F9ED8687C9CBF7251 /* CKPhone.h */,
+				F217FA69403726B8AE163917B29873CD /* CKPhone.m */,
+				0735047D1A6DBD22046DF9441BE4BDA4 /* CKSocialProfile.h */,
+				ED891D2283449E2A487E50446195E9FA /* CKSocialProfile.m */,
+				6BF2A1BD7E0EB5ED44C5A62A52451B60 /* CKSocialProfile_Private.h */,
+				4A578810EE6108398ECBFF7401419BC3 /* CKURL.h */,
+				470D31FE83E22B9BD0FA44877D3832CE /* CKURL.m */,
+				E869E12E097C20A3874EA2D24800EAB6 /* ContactsKit.h */,
+				A3A1980B1B8DD04ACA3B78D7B7DF9811 /* NSBundle+CKLocalizatoin.h */,
+				47822BD119154E56892C8057B141E291 /* NSBundle+CKLocalizatoin.m */,
+				043F3573155B0098047CEC7EFDD031CE /* Resources */,
+				5E6E9EFD14F23B92C8A860DFD9896A95 /* Support Files */,
+			);
+			name = ContactsKit;
+			path = ContactsKit;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				C19FB8798C2E4A904852EE8FA5AAE839 /* Pods */,
+				A45030F664A5D34E1DC33DFD0E6744A0 /* Products */,
+				B1423B50B43B982BB71581794BC1FE03 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ECDFA9B76CBD39AEB5C05DEC65CEE712 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				35EB7AB038CB53B4E4D30274F4EC027F /* AddressBook.framework */,
+				52F927D0A0063F7A5D861383D1856013 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F0EF5408BA1BD8E8974E6E2B1784C6AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1EB16B7AA2A55D98E8294F489526EA6 /* RAMAnimatedTabBarController.modulemap */,
+				592B9DA951C7465299EF4A1D9E95077F /* RAMAnimatedTabBarController.xcconfig */,
+				6C362DD090A5979F4240208D33D04B46 /* RAMAnimatedTabBarController-dummy.m */,
+				E3E029CE8DCB109E25FDB1F80F8B4BC4 /* RAMAnimatedTabBarController-Info.plist */,
+				DD6F73C85072EBBC99B97A8F44F26940 /* RAMAnimatedTabBarController-prefix.pch */,
+				B805BD5E5DBF025F8C0B6A6395654C09 /* RAMAnimatedTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RAMAnimatedTabBarController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3428BA569F596AA1D525DEA8F243118B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EF4E151180ACB08AC2211DD6E7DCD4 /* Pods-RAMAnimatedTabBarDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742BDD8478B3CBD1C6E05DB28E9959D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4FCCE00F6049564B9AC60E2E19D78A /* CKAddress.h in Headers */,
+				283C0F3CCDE3A80FBD8A23F5EEB0FEB0 /* CKAddress_Private.h in Headers */,
+				5D92897DF72C83270731AB75E7FF44C6 /* CKAddressBook.h in Headers */,
+				98A28394E6345DEF687BF7A407C245A1 /* CKAddressBook_Private.h in Headers */,
+				F0D1E0AB27FBEBF0E6D2FFC9FB4A53E7 /* CKAutoCoder.h in Headers */,
+				5F90D850F80A4C6ADAB7C07A8A42DA33 /* CKContact.h in Headers */,
+				D080F48BA1D85DF550865951F0AD679E /* CKContact_Private.h in Headers */,
+				FD1680FBFF7007771F8FF99AA9D75155 /* CKDate.h in Headers */,
+				622C0E0BAB80E5ABF29EAE5A5E7D4325 /* CKEmail.h in Headers */,
+				3ABE665BE39A9C90A8A9E5E003A51228 /* CKLabel.h in Headers */,
+				762B540C45A6E61DA59667D4B02C6FAA /* CKLabel_Private.h in Headers */,
+				2DF1E84DE5DE6E1C05D9B894259CE537 /* CKMacros.h in Headers */,
+				C8E5CDC2044DDA1809D80BA1B58C47BF /* CKMessenger.h in Headers */,
+				AC37F45C546CE7AD12A7980C6D55DF4B /* CKMessenger_Private.h in Headers */,
+				822E338DDC56D76978D4042F39A9694B /* CKPhone.h in Headers */,
+				2FD27AE2A2BF85C62333978A2B61D7AE /* CKSocialProfile.h in Headers */,
+				5F7531B6D514EA9F2E0A0D3F22CE58D4 /* CKSocialProfile_Private.h in Headers */,
+				C965118D2CA9135FE38D9BDB276083C4 /* CKURL.h in Headers */,
+				39F67E8B4CDF4B4973C417952A0263AE /* ContactsKit-umbrella.h in Headers */,
+				B36DAD8B5D2C612E5F2536E88DC33318 /* ContactsKit.h in Headers */,
+				99B5F9BD4CD9E7B7B1FA118312767640 /* NSBundle+CKLocalizatoin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928D030860F5EE274585AED2A0CAF611 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63627F5031F565E57FFD004382135EF0 /* RAMAnimatedTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7FEB4D4A9A2726E79F5F57FB96F4374A /* Pods-RAMAnimatedTabBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86BDEEB8EF371D2065F2A53558BC8326 /* Build configuration list for PBXNativeTarget "Pods-RAMAnimatedTabBarDemo" */;
+			buildPhases = (
+				3428BA569F596AA1D525DEA8F243118B /* Headers */,
+				2A52B6ECFAD84A267FF9EF9D8C11EFD8 /* Sources */,
+				25ED48AA6A4A516D7706C32398382518 /* Frameworks */,
+				5C2C927D8BDFC55B794380B770C378EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D550DF48E5F8971C23BB45A37998FCB /* PBXTargetDependency */,
+				1BBB16CD7C5C791858BFA83D25CB9E8A /* PBXTargetDependency */,
+			);
+			name = "Pods-RAMAnimatedTabBarDemo";
+			productName = "Pods-RAMAnimatedTabBarDemo";
+			productReference = D742BA7130BE237D0BFF49EC8EFF5294 /* Pods_RAMAnimatedTabBarDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DED4DEF356A163E50925101C3C7C0FB9 /* RAMAnimatedTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A45C30C323AD5804A5AD2B8C0CA54B /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */;
+			buildPhases = (
+				928D030860F5EE274585AED2A0CAF611 /* Headers */,
+				C564F808C7B165F8C4FBC70BA4038EC5 /* Sources */,
+				14D33FC5AC2BFA2B0AD543EC397C51AA /* Frameworks */,
+				739EB65B4AF74F32ADA65195630639CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAMAnimatedTabBarController;
+			productName = RAMAnimatedTabBarController;
+			productReference = 6803A26D713572B4FCF211333F946956 /* RAMAnimatedTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FFE547136E4077CADC492BBF47CB6E9D /* ContactsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9832ED57F9CD68955B496F745C1C0C3E /* Build configuration list for PBXNativeTarget "ContactsKit" */;
+			buildPhases = (
+				742BDD8478B3CBD1C6E05DB28E9959D3 /* Headers */,
+				A488310313EA6EBF23CC989730AAE873 /* Sources */,
+				493B8273D308BA3901765D3153611F13 /* Frameworks */,
+				AF467F5630013AB3EFDBDCFD42A1A806 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactsKit;
+			productName = ContactsKit;
+			productReference = 49C681FB219669B9C1ECA0023BD90F13 /* ContactsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A45030F664A5D34E1DC33DFD0E6744A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFE547136E4077CADC492BBF47CB6E9D /* ContactsKit */,
+				7FEB4D4A9A2726E79F5F57FB96F4374A /* Pods-RAMAnimatedTabBarDemo */,
+				DED4DEF356A163E50925101C3C7C0FB9 /* RAMAnimatedTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C2C927D8BDFC55B794380B770C378EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739EB65B4AF74F32ADA65195630639CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF467F5630013AB3EFDBDCFD42A1A806 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDABDA5B626DB7E934BC53C59529FF4 /* ContactsKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A52B6ECFAD84A267FF9EF9D8C11EFD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FF61E9FB2890AE86632CE71711622D /* Pods-RAMAnimatedTabBarDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A488310313EA6EBF23CC989730AAE873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E88B962F43C27AE8C6F734DBD11D75 /* CKAddress.m in Sources */,
+				76B113CC2AF2193415B3E64D2A08C97F /* CKAddressBook.m in Sources */,
+				A87F5B26BCD350A7DE64728A7C6E7B01 /* CKAutoCoder.m in Sources */,
+				889AB44F501E15C1919E168DB3330CEF /* CKContact.m in Sources */,
+				63F8C2756CC988E6A24FF920EC52CF67 /* CKDate.m in Sources */,
+				4413F2E387D76523F69C3507C4335F49 /* CKEmail.m in Sources */,
+				0A068058156930CA173D486703D152F0 /* CKLabel.m in Sources */,
+				D7B292DE6D0C2CA1A90C2F4E606064FB /* CKMessenger.m in Sources */,
+				EA72D965C4B181D7CA994F4664BC7436 /* CKPhone.m in Sources */,
+				855F93D1DA07D319F35AF850DEF83089 /* CKSocialProfile.m in Sources */,
+				DDD81F335FF857EB32CE84BBAD09FFEA /* CKURL.m in Sources */,
+				7CAF24F71590BE58001C071E91AF92F1 /* ContactsKit-dummy.m in Sources */,
+				F6014ACF2814A59EEB5C72045ECDBF71 /* NSBundle+CKLocalizatoin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C564F808C7B165F8C4FBC70BA4038EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B8024BA3497BB50E9DB3499D0DBBA0 /* Collection+Extensions.swift in Sources */,
+				9083623D9FE447DDAC23F3D9CEE8BC10 /* RAMAnimatedTabBarController+BottomLine.swift in Sources */,
+				5C849FBED09095F3172F21102B529FE2 /* RAMAnimatedTabBarController-dummy.m in Sources */,
+				5DBDF38890137B49DC6EE62AF0DE44C5 /* RAMAnimatedTabBarController.swift in Sources */,
+				D240991D247747660708779B18C1330D /* RAMAnimatedTabBarItem.swift in Sources */,
+				9C40F9A782F15BACA7B8B55E7E0885C6 /* RAMBadge.swift in Sources */,
+				EDCBFA9B5A1C278B4C0EDBB3FF5B24B4 /* RAMBounceAnimation.swift in Sources */,
+				AFD985A8844D6713B3287F52AB39042C /* RAMFrameItemAnimation.swift in Sources */,
+				DA28252D976B465BE2CDB71A2A46339F /* RAMFumeAnimation.swift in Sources */,
+				26188D2EEE660311667A0F7A20794FD4 /* RAMItemAnimationProtocol.swift in Sources */,
+				6DF0B4E59B3896D5CE6061AAF88DA4B7 /* RAMRotationAnimation.swift in Sources */,
+				D1626F6B3818A61F4684DC04B9C20C74 /* RAMTransitionItemAnimations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BBB16CD7C5C791858BFA83D25CB9E8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMAnimatedTabBarController;
+			target = DED4DEF356A163E50925101C3C7C0FB9 /* RAMAnimatedTabBarController */;
+			targetProxy = 207BDCD107BB28B9A0717F0F1F83E248 /* PBXContainerItemProxy */;
+		};
+		6D550DF48E5F8971C23BB45A37998FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ContactsKit;
+			target = FFE547136E4077CADC492BBF47CB6E9D /* ContactsKit */;
+			targetProxy = A464428E23D4D99247D06A3D01A7CD68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02E52B93C0FE56D2D248A1CCEAD402B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068B4FD1C0DB8CDD0F723132338A636B /* Pods-RAMAnimatedTabBarDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RAMAnimatedTabBarDemo/Pods-RAMAnimatedTabBarDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RAMAnimatedTabBarDemo/Pods-RAMAnimatedTabBarDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09743F995A756F5F28A29C9A83AEADDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592B9DA951C7465299EF4A1D9E95077F /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = RAMAnimatedTabBarController;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		148214EB16E2D015780A52FD98388211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592B9DA951C7465299EF4A1D9E95077F /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = RAMAnimatedTabBarController;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5318E3381AB7BAC12DF1B7B5C37BC293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AD9250F885CCFCDEC8D8459E57EFD9 /* Pods-RAMAnimatedTabBarDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RAMAnimatedTabBarDemo/Pods-RAMAnimatedTabBarDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RAMAnimatedTabBarDemo/Pods-RAMAnimatedTabBarDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C573DB7CF92C237D05346F4734923A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C16D329DF78D6C55EFC4BCDD1DB00A /* ContactsKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ContactsKit/ContactsKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ContactsKit/ContactsKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ContactsKit/ContactsKit.modulemap";
+				PRODUCT_MODULE_NAME = ContactsKit;
+				PRODUCT_NAME = ContactsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A0B1F6E19C722F7FFE47F03BF322D295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C16D329DF78D6C55EFC4BCDD1DB00A /* ContactsKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ContactsKit/ContactsKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ContactsKit/ContactsKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ContactsKit/ContactsKit.modulemap";
+				PRODUCT_MODULE_NAME = ContactsKit;
+				PRODUCT_NAME = ContactsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10A45C30C323AD5804A5AD2B8C0CA54B /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148214EB16E2D015780A52FD98388211 /* Debug */,
+				09743F995A756F5F28A29C9A83AEADDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86BDEEB8EF371D2065F2A53558BC8326 /* Build configuration list for PBXNativeTarget "Pods-RAMAnimatedTabBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E52B93C0FE56D2D248A1CCEAD402B1 /* Debug */,
+				5318E3381AB7BAC12DF1B7B5C37BC293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9832ED57F9CD68955B496F745C1C0C3E /* Build configuration list for PBXNativeTarget "ContactsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B1F6E19C722F7FFE47F03BF322D295 /* Debug */,
+				7C573DB7CF92C237D05346F4734923A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
