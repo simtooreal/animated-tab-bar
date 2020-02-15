@@ -29,6 +29,10 @@
 		84D4B7AE1DB0D38700EE38C6 /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41469A1A1B944D0037F03C /* RAMFrameItemAnimation.swift */; };
 		84D4B7AF1DB0D38B00EE38C6 /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41469C1A1B944D0037F03C /* RAMTransitionItemAnimations.swift */; };
 		84D4B7B01DB0D38F00EE38C6 /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41469D1A1B944D0037F03C /* RAMItemAnimationProtocol.swift */; };
+		AB27E73B23F785BC00D788FF /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E73723F785BC00D788FF /* UIStackView+Extension.swift */; };
+		AB27E73C23F785BC00D788FF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E73823F785BC00D788FF /* UIColor+Extension.swift */; };
+		AB27E73D23F785BC00D788FF /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E73923F785BC00D788FF /* UIButton+Extension.swift */; };
+		AB27E73E23F785BC00D788FF /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E73A23F785BC00D788FF /* UITextField+Extension.swift */; };
 		AB8B2A2223F7604D00A16BF6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2123F7604D00A16BF6 /* LoginController.swift */; };
 		AB8B2A2423F760CF00A16BF6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2323F760CF00A16BF6 /* LoginView.swift */; };
 		AB8B2A2623F7610000A16BF6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2523F7610000A16BF6 /* Extensions.swift */; };
@@ -93,6 +97,10 @@
 		84D4B79F1DB0D35500EE38C6 /* TabBarLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarLib.h; sourceTree = "<group>"; };
 		84D4B7A01DB0D35500EE38C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CA198869EA0BCF6E96FCFD /* Pods_RAMAnimatedTabBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAMAnimatedTabBarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB27E73723F785BC00D788FF /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		AB27E73823F785BC00D788FF /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		AB27E73923F785BC00D788FF /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		AB27E73A23F785BC00D788FF /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		AB8B2A2123F7604D00A16BF6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AB8B2A2323F760CF00A16BF6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AB8B2A2523F7610000A16BF6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -199,6 +207,27 @@
 			path = TabBarLib;
 			sourceTree = "<group>";
 		};
+		AB27E73623F7855800D788FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB27E73923F785BC00D788FF /* UIButton+Extension.swift */,
+				AB27E73823F785BC00D788FF /* UIColor+Extension.swift */,
+				AB27E73723F785BC00D788FF /* UIStackView+Extension.swift */,
+				AB27E73A23F785BC00D788FF /* UITextField+Extension.swift */,
+				AB8B2A2523F7610000A16BF6 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB27E73F23F785D000D788FF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AB8B2A2323F760CF00A16BF6 /* LoginView.swift */,
+				AB8B2A2123F7604D00A16BF6 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		CE4146691A1B923D0037F03C = {
 			isa = PBXGroup;
 			children = (
@@ -226,15 +255,9 @@
 			children = (
 				CE90A8441A1CB1A2002D8931 /* Resources */,
 				CE4146971A1B94170037F03C /* RAMAnimatedTabBarControlller */,
-				CE4146771A1B923D0037F03C /* AppDelegate.swift */,
-				CE4146791A1B923D0037F03C /* ViewController.swift */,
-				CE41467B1A1B923D0037F03C /* Main.storyboard */,
-				CE41467E1A1B923D0037F03C /* Images.xcassets */,
-				CE4146801A1B923D0037F03C /* LaunchScreen.xib */,
 				CE4146751A1B923D0037F03C /* Supporting Files */,
-				AB8B2A2123F7604D00A16BF6 /* LoginController.swift */,
-				AB8B2A2323F760CF00A16BF6 /* LoginView.swift */,
-				AB8B2A2523F7610000A16BF6 /* Extensions.swift */,
+				AB27E73F23F785D000D788FF /* Login */,
+				AB27E73623F7855800D788FF /* Extensions */,
 			);
 			path = RAMAnimatedTabBarDemo;
 			sourceTree = "<group>";
@@ -242,6 +265,11 @@
 		CE4146751A1B923D0037F03C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE4146771A1B923D0037F03C /* AppDelegate.swift */,
+				CE4146791A1B923D0037F03C /* ViewController.swift */,
+				CE41467B1A1B923D0037F03C /* Main.storyboard */,
+				CE41467E1A1B923D0037F03C /* Images.xcassets */,
+				CE4146801A1B923D0037F03C /* LaunchScreen.xib */,
 				CE4146761A1B923D0037F03C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -549,10 +577,14 @@
 				CE41469E1A1B944D0037F03C /* RAMFrameItemAnimation.swift in Sources */,
 				CE90A8401A1C7C14002D8931 /* RAMAnimatedTabBarController.swift in Sources */,
 				CE41467A1A1B923D0037F03C /* ViewController.swift in Sources */,
+				AB27E73C23F785BC00D788FF /* UIColor+Extension.swift in Sources */,
+				AB27E73D23F785BC00D788FF /* UIButton+Extension.swift in Sources */,
+				AB27E73E23F785BC00D788FF /* UITextField+Extension.swift in Sources */,
 				AB8B2A2423F760CF00A16BF6 /* LoginView.swift in Sources */,
 				5ADAB94A209B0FA8006CCD85 /* RAMAnimatedTabBarController+BottomLine.swift in Sources */,
 				CE90A8431A1C8DD3002D8931 /* RAMRotationAnimation.swift in Sources */,
 				F3E056BE1A2DD57600F33DDA /* RAMFumeAnimation.swift in Sources */,
+				AB27E73B23F785BC00D788FF /* UIStackView+Extension.swift in Sources */,
 				CE41469F1A1B944D0037F03C /* RAMTransitionItemAnimations.swift in Sources */,
 				3950EDDC235497650072BAAD /* Collection+Extensions.swift in Sources */,
 				84BC64221C22E4C800B89B79 /* RAMBadge.swift in Sources */,
