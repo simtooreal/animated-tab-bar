@@ -33,6 +33,8 @@
 		AB27E73C23F785BC00D788FF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E73823F785BC00D788FF /* UIColor+Extension.swift */; };
 		AB27E73D23F785BC00D788FF /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E73923F785BC00D788FF /* UIButton+Extension.swift */; };
 		AB27E73E23F785BC00D788FF /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E73A23F785BC00D788FF /* UITextField+Extension.swift */; };
+		AB27E74223F78A7B00D788FF /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E74123F78A7A00D788FF /* SignUpController.swift */; };
+		AB27E74423F84CE800D788FF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27E74323F84CE800D788FF /* SignUpView.swift */; };
 		AB8B2A2223F7604D00A16BF6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2123F7604D00A16BF6 /* LoginController.swift */; };
 		AB8B2A2423F760CF00A16BF6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2323F760CF00A16BF6 /* LoginView.swift */; };
 		AB8B2A2623F7610000A16BF6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2523F7610000A16BF6 /* Extensions.swift */; };
@@ -101,6 +103,8 @@
 		AB27E73823F785BC00D788FF /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		AB27E73923F785BC00D788FF /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		AB27E73A23F785BC00D788FF /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		AB27E74123F78A7A00D788FF /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		AB27E74323F84CE800D788FF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		AB8B2A2123F7604D00A16BF6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AB8B2A2323F760CF00A16BF6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AB8B2A2523F7610000A16BF6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -228,6 +232,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		AB27E74023F78A4E00D788FF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AB27E74123F78A7A00D788FF /* SignUpController.swift */,
+				AB27E74323F84CE800D788FF /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		CE4146691A1B923D0037F03C = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +266,7 @@
 		CE4146741A1B923D0037F03C /* RAMAnimatedTabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AB27E74023F78A4E00D788FF /* SignUp */,
 				CE90A8441A1CB1A2002D8931 /* Resources */,
 				CE4146971A1B94170037F03C /* RAMAnimatedTabBarControlller */,
 				CE4146751A1B923D0037F03C /* Supporting Files */,
@@ -576,6 +590,7 @@
 			files = (
 				CE41469E1A1B944D0037F03C /* RAMFrameItemAnimation.swift in Sources */,
 				CE90A8401A1C7C14002D8931 /* RAMAnimatedTabBarController.swift in Sources */,
+				AB27E74223F78A7B00D788FF /* SignUpController.swift in Sources */,
 				CE41467A1A1B923D0037F03C /* ViewController.swift in Sources */,
 				AB27E73C23F785BC00D788FF /* UIColor+Extension.swift in Sources */,
 				AB27E73D23F785BC00D788FF /* UIButton+Extension.swift in Sources */,
@@ -589,6 +604,7 @@
 				3950EDDC235497650072BAAD /* Collection+Extensions.swift in Sources */,
 				84BC64221C22E4C800B89B79 /* RAMBadge.swift in Sources */,
 				3950EDD82354950E0072BAAD /* RAMAnimatedTabBarItem.swift in Sources */,
+				AB27E74423F84CE800D788FF /* SignUpView.swift in Sources */,
 				AB8B2A2623F7610000A16BF6 /* Extensions.swift in Sources */,
 				CE4146A01A1B944D0037F03C /* RAMItemAnimationProtocol.swift in Sources */,
 				CE4146781A1B923D0037F03C /* AppDelegate.swift in Sources */,
