@@ -6,6 +6,19 @@
 //  Copyright (c) 2014 Ramotion. All rights reserved.
 //
 
+//import UIKit
+//
+//@UIApplicationMain
+//class AppDelegate: UIResponder, UIApplicationDelegate {
+//
+//    var window: UIWindow?
+//
+//    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+//        return true
+//    }
+//}
+
+
 import UIKit
 
 @UIApplicationMain
@@ -13,7 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {        
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions
+        launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController = UINavigationController(rootViewController: LoginController())
+        
         return true
     }
 }

@@ -29,6 +29,9 @@
 		84D4B7AE1DB0D38700EE38C6 /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41469A1A1B944D0037F03C /* RAMFrameItemAnimation.swift */; };
 		84D4B7AF1DB0D38B00EE38C6 /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41469C1A1B944D0037F03C /* RAMTransitionItemAnimations.swift */; };
 		84D4B7B01DB0D38F00EE38C6 /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41469D1A1B944D0037F03C /* RAMItemAnimationProtocol.swift */; };
+		AB8B2A2223F7604D00A16BF6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2123F7604D00A16BF6 /* LoginController.swift */; };
+		AB8B2A2423F760CF00A16BF6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2323F760CF00A16BF6 /* LoginView.swift */; };
+		AB8B2A2623F7610000A16BF6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2523F7610000A16BF6 /* Extensions.swift */; };
 		CE4146781A1B923D0037F03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4146771A1B923D0037F03C /* AppDelegate.swift */; };
 		CE41467A1A1B923D0037F03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4146791A1B923D0037F03C /* ViewController.swift */; };
 		CE41467D1A1B923D0037F03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41467B1A1B923D0037F03C /* Main.storyboard */; };
@@ -90,6 +93,9 @@
 		84D4B79F1DB0D35500EE38C6 /* TabBarLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarLib.h; sourceTree = "<group>"; };
 		84D4B7A01DB0D35500EE38C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CA198869EA0BCF6E96FCFD /* Pods_RAMAnimatedTabBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAMAnimatedTabBarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8B2A2123F7604D00A16BF6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		AB8B2A2323F760CF00A16BF6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AB8B2A2523F7610000A16BF6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE4146721A1B923D0037F03C /* Animated Tab Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animated Tab Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4146761A1B923D0037F03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4146771A1B923D0037F03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +232,9 @@
 				CE41467E1A1B923D0037F03C /* Images.xcassets */,
 				CE4146801A1B923D0037F03C /* LaunchScreen.xib */,
 				CE4146751A1B923D0037F03C /* Supporting Files */,
+				AB8B2A2123F7604D00A16BF6 /* LoginController.swift */,
+				AB8B2A2323F760CF00A16BF6 /* LoginView.swift */,
+				AB8B2A2523F7610000A16BF6 /* Extensions.swift */,
 			);
 			path = RAMAnimatedTabBarDemo;
 			sourceTree = "<group>";
@@ -540,6 +549,7 @@
 				CE41469E1A1B944D0037F03C /* RAMFrameItemAnimation.swift in Sources */,
 				CE90A8401A1C7C14002D8931 /* RAMAnimatedTabBarController.swift in Sources */,
 				CE41467A1A1B923D0037F03C /* ViewController.swift in Sources */,
+				AB8B2A2423F760CF00A16BF6 /* LoginView.swift in Sources */,
 				5ADAB94A209B0FA8006CCD85 /* RAMAnimatedTabBarController+BottomLine.swift in Sources */,
 				CE90A8431A1C8DD3002D8931 /* RAMRotationAnimation.swift in Sources */,
 				F3E056BE1A2DD57600F33DDA /* RAMFumeAnimation.swift in Sources */,
@@ -547,9 +557,11 @@
 				3950EDDC235497650072BAAD /* Collection+Extensions.swift in Sources */,
 				84BC64221C22E4C800B89B79 /* RAMBadge.swift in Sources */,
 				3950EDD82354950E0072BAAD /* RAMAnimatedTabBarItem.swift in Sources */,
+				AB8B2A2623F7610000A16BF6 /* Extensions.swift in Sources */,
 				CE4146A01A1B944D0037F03C /* RAMItemAnimationProtocol.swift in Sources */,
 				CE4146781A1B923D0037F03C /* AppDelegate.swift in Sources */,
 				CE90A8791A1CE200002D8931 /* RAMBounceAnimation.swift in Sources */,
+				AB8B2A2223F7604D00A16BF6 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
