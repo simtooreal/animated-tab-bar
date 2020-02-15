@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 extension UITextField {
     func setLeftPaddingPoints(_ space: CGFloat) {
@@ -45,12 +46,30 @@ class LoginController: UIViewController {
     
     func loginPressed() {
         print("login button pressed")
+        
     }
     
     func signupPressed() {
         print("signup button pressed")
         let signUpController = SignUpController()
         present(signUpController, animated: true, completion: nil)
+    }
+    
+    func signInWithVerificationCode(verificationCode: String, signInSuccess:@escaping(Error?, AuthDataResult?)->()) {
+        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else {
+            signInSuccess(nil, nil)
+            return
+        }
+        
+        let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: verificationCode)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+            }
+            
+            signInSuccess(error, authResult)
+        }
     }
 
     /*

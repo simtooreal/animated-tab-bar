@@ -5,8 +5,14 @@ target 'RAMAnimatedTabBarDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for LuminaSample
   pod 'RAMAnimatedTabBarController'
+  # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
+  pod 'CodableFirebase'
   pod 'ContactsKit'
 
 end
