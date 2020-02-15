@@ -9,6 +9,10 @@
 import UIKit
 
 class LoginView: UIView {
+    
+    var loginAction: (() -> Void)?
+    var signupAction: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -47,6 +51,7 @@ class LoginView: UIView {
         placeholder = NSMutableAttributedString(attributedString: NSAttributedString(string: "Phone Number", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), .foregroundColor: UIColor(white: 1, alpha: 0.7)]))
         tf.attributedPlaceholder = placeholder
         tf.setAnchor(width: 0, height: 40)
+        tf.setLeftPaddingPoints(20)
         return tf
     }()
     
@@ -63,6 +68,7 @@ class LoginView: UIView {
         placeholder = NSMutableAttributedString(attributedString: NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), .foregroundColor: UIColor(white: 1, alpha: 0.7)]))
         tf.attributedPlaceholder = placeholder
         tf.setAnchor(width: 0, height: 40)
+        tf.setLeftPaddingPoints(20)
         return tf
     }()
     
@@ -74,6 +80,7 @@ class LoginView: UIView {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor(red: 80/255, green: 227/255, blue: 194/255, alpha: 1).cgColor
         button.setAnchor(width: 0, height: 50)
+       button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     
@@ -85,6 +92,7 @@ class LoginView: UIView {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor(red: 255/255, green: 151/255, blue: 164/255, alpha: 1).cgColor
         button.setAnchor(width: 0, height: 50)
+        button.addTarget(self, action: #selector(handleSignup), for: .touchUpInside)
         return button
     }()
     
@@ -94,6 +102,14 @@ class LoginView: UIView {
         stackView.distribution = .fillProportionally
         stackView.spacing = 10
         return stackView
+    }
+    
+    @objc func handleLogin() {
+        loginAction?()
+    }
+    
+    @objc func handleSignup() {
+        signupAction?()
     }
     
     required init?(coder: NSCoder) {

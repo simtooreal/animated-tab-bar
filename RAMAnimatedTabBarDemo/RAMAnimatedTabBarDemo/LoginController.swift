@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension UITextField {
+    func setLeftPaddingPoints(_ space: CGFloat) {
+        let paddingView = UIView(frame:CGRect(x: 0, y: 0, width: space, height: self.frame.size.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
+}
+
 class LoginController: UIViewController {
     
     var loginView: LoginView!
@@ -29,10 +37,19 @@ class LoginController: UIViewController {
     func setupView() {
         let mainView = LoginView(frame: self.view.frame)
         self.loginView = mainView
+        self.loginView.loginAction = loginPressed
+        self.loginView.signupAction = signupPressed
         self.view.addSubview(loginView)
         loginView.setAnchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
     }
     
+    func loginPressed() {
+        print("login button pressed")
+    }
+    
+    func signupPressed() {
+        print("signup button pressed")
+    }
 
     /*
     // MARK: - Navigation
