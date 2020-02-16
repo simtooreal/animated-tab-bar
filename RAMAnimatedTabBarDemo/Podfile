@@ -7,12 +7,10 @@ target 'RAMAnimatedTabBarDemo' do
 
   pod 'RAMAnimatedTabBarController'
   # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
-  pod 'Firebase/Storage'
-  pod 'FirebaseUI/Storage'
-  pod 'CodableFirebase'
+  pod 'Firebase/Database'
   pod 'ContactsKit'
 
 end

@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
 
 class SignUpController: UIViewController {
     var signUpView: SignUpView!
@@ -43,7 +42,18 @@ class SignUpController: UIViewController {
         
         let email = phoneNumber + "@gmail.com"
         
-        //Auth.auth().createUser(withEmail: email, password: password, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            // completion handler
+            if error != nil {
+                print(error!.localizedDescription)
+            } else {
+                //success
+                guard let uid = user?.user.uid else { return }
+                print("Registration Successful ", uid)
+
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     
     func LoginRequestComplete(success: Bool) {
