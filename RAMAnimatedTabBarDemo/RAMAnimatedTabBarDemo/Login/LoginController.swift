@@ -21,6 +21,7 @@ extension UITextField {
 class LoginController: UIViewController {
     
     var loginView: LoginView!
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,13 +54,19 @@ class LoginController: UIViewController {
         
         let email = phoneNumber + "@gmail.com"
         
-        verifyPhoneNumber(phoneNumber: phoneNumber)
+        //verifyPhoneNumber(phoneNumber: phoneNumber)
         
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let err = error {
                 print(err.localizedDescription)
             } else {
                 print("User: \(String(describing: user)) signed in")
+                self.defaults.set(true, forKey: "UserIsLoggedIn")
+                Analytics.logEvent(AnalyticsEventLogin, parameters: [
+                    AnalyticsParameterMethod: self.method
+                ])
+                let mainController = UINavigationController(rootViewController: MainController())
+                self.present(mainController, animated: true, completion: nil)
             }
         }
     }

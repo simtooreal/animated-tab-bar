@@ -26,6 +26,9 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let defaults = UserDefaults.standard
+    var userIsLoggedIn: Bool?
 
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions
         launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
@@ -34,9 +37,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        window?.rootViewController = UINavigationController(rootViewController: LoginController())
+        let loginController = UINavigationController(rootViewController: LoginController())
+        let mainController = UINavigationController(rootViewController: MainController())
         
         FirebaseApp.configure()
+        userIsLoggedIn = defaults.bool(forKey: "UserIsLoggedIn")
+        
+        if userIsLoggedIn == true {
+            window?.rootViewController = mainController
+        } else {
+            window?.rootViewController = loginController
+        }
         
         return true
     }

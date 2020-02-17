@@ -11,10 +11,12 @@ import Firebase
 
 class SignUpController: UIViewController {
     var signUpView: SignUpView!
+    var defaults = UserDefaults.standard
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ref = Database.database().reference()
         setupView()
     }
     
@@ -34,7 +36,11 @@ class SignUpController: UIViewController {
         guard let password = signUpView.passwordTextField.text else { return }
         guard let age = signUpView.ageTextField.text else { return }
         
-        verifyPhoneNumber(phoneNumber: phoneNumber)
+        let userData: [String: Any] = [
+            "name": name
+        ]
+        
+        //verifyPhoneNumber(phoneNumber: phoneNumber)
         
         guard !phoneNumber.isEmpty else {
             return
@@ -49,8 +55,12 @@ class SignUpController: UIViewController {
             } else {
                 //success
                 guard let uid = user?.user.uid else { return }
+                self.ref.child("users/\(uid)").setValue(userData)
+                self.defaults.set(false, forKey: "UserIsloggedIn")
                 print("Registration Successful ", uid)
-
+                Analytics.logEvent(AnalyticsEventSignUp, parameters: [
+                    AnalyticsParameterMethod: self.method
+                ])
                 self.dismiss(animated: true, completion: nil)
             }
         }
