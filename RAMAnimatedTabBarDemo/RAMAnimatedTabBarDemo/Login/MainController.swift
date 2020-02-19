@@ -10,6 +10,7 @@ import UIKit
 import Photos
 import Contacts
 import Firebase
+import CoreImage
 
 class MainController: UITabBarController {
     
@@ -48,19 +49,74 @@ class MainController: UITabBarController {
         }
     }
     
-    func fetchLatestPhotos(forCount count: Int?) -> PHFetchResult<PHAsset> {
-        // Create fetch options.
-        let options = PHFetchOptions()
+    func fetchPhotos() {
+        PHPhotoLibrary.requestAuthorization { status in
+            switch status {
+            case .authorized:
+                var arrayOfPHAsset : [PHAsset] = []
+                let fetchOptions = PHFetchOptions()
+                // Add sortDescriptor so the lastest photos will be returned.
+                let sortDescriptor = NSSortDescriptor(key: "creationDate", ascending: false)
+                fetchOptions.sortDescriptors = [sortDescriptor]
+                let PHFetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions) as! PHFetchResult<AnyObject>
+                print("Found \(PHFetchResult.count) PHFetchResults")
+                var ids = [String]()
+                PHFetchResult.enumerateObjects({ (object, count, stop) in
+                    ids.append(object.localIdentifier)}
+                )
+//                var count = 0
+//                for id in ids {
+//                    // Get picture retrieves the image from the photo library based on the localIdentifier images size is limited to 300x400
+//                    autoreleasepool {
+//                        let candidateImage = getPicture(pictureIdentifier: id, pictureWidth: 300, pictureHeight: 400)
+//                        let ciImage =  CIImage(image: candidateImage)
+//                        // image processing here
+//                    }
+//                    count += 1
+//                }
+                PHFetchResult.enumerateObjects({(object: AnyObject!,
+                            count: Int,
+                            stop: UnsafeMutablePointer<ObjCBool>) in
 
-        // If count limit is specified.
-        if let count = count { options.fetchLimit = count }
+                            if object is PHAsset{
+                                let asset = object as! PHAsset
+                                print(asset)
+                                arrayOfPHAsset.append(asset)
+                //                print("Inside  If object is PHAsset, This is number 1")
+                //
+                //                let imageSize = CGSize(width: asset.pixelWidth,
+                //                                       height: asset.pixelHeight)
+                //
+                //                /* For faster performance, and maybe degraded image */
+                //                let options = PHImageRequestOptions()
+                //                options.deliveryMode = .fastFormat
+                //                options.isSynchronous = true
+                //
+                //                imageManager.requestImage(for: asset,
+                //                                                  targetSize: imageSize,
+                //                                                  contentMode: .aspectFill,
+                //                                                  options: options,
+                //                                                  resultHandler: {
+                //                                                    (image, info) -> Void in
+                ////                                                    self.photo = image!
+                ////                                                    /* The image is now available to us */
+                ////                                                    self.addImgToArray(uploadImage: self.photo)
+                //                                                    print("enum for image, This is number 2")
+                //
+                //                })
 
-        // Add sortDescriptor so the lastest photos will be returned.
-        let sortDescriptor = NSSortDescriptor(key: "creationDate", ascending: false)
-        options.sortDescriptors = [sortDescriptor]
-
-        // Fetch the photos.
-        return PHAsset.fetchAssets(with: .image, options: options)
+                            }
+                        })
+                        print("arrayOfPHAsset : \(arrayOfPHAsset), arrayOfPHAsset count : \(arrayOfPHAsset.count)")
+                self.findFaces(arrayOfPHAsset: arrayOfPHAsset)
+                //self.findFaces(allPhotos: allPhotos)
+            case .denied, .restricted:
+                print("Not allowed")
+            case .notDetermined:
+                // Should not see this when requesting
+                print("Not determined yet")
+            }
+        }
     }
     
     let defaults = UserDefaults.standard
@@ -99,6 +155,8 @@ class MainController: UITabBarController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(logOut))
         fetchUserInfo()
         fetchContacts()
+        fetchPhotos()
+        
     }
     
     @objc func logOut() {
@@ -120,5 +178,23 @@ class MainController: UITabBarController {
             guard let username = data["name"] as? String else { return }
             self.appUser = AppUser(name: username, uid: userId)
         }
+    }
+    
+    func findFaces(arrayOfPHAsset: [PHAsset]) {
+        print("now we need to find all the different faces")
+        for photo in arrayOfPHAsset {
+            let options = PHContentEditingInputRequestOptions()
+            options.isNetworkAccessAllowed = true
+
+            photo.requestContentEditingInput(with: options) { (contentEditingInput: PHContentEditingInput?, _) -> Void in
+                let img = CIImage(contentsOf: contentEditingInput!.fullSizeImageURL!)
+                print(img?.properties)
+            }
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        //dispose any resources that can be recreated
     }
 }
