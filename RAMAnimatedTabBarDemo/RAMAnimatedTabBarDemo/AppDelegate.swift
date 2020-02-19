@@ -36,11 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+        FirebaseApp.configure()
         
         let loginController = UINavigationController(rootViewController: LoginController())
         let mainController = UINavigationController(rootViewController: MainController())
         
-        FirebaseApp.configure()
         userIsLoggedIn = defaults.bool(forKey: "UserIsLoggedIn")
         
         if userIsLoggedIn == true {

@@ -41,6 +41,7 @@
 		AB8B2A2223F7604D00A16BF6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2123F7604D00A16BF6 /* LoginController.swift */; };
 		AB8B2A2423F760CF00A16BF6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2323F760CF00A16BF6 /* LoginView.swift */; };
 		AB8B2A2623F7610000A16BF6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B2A2523F7610000A16BF6 /* Extensions.swift */; };
+		ABB2E0EA23FB151F00C9D012 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2E0E923FB151F00C9D012 /* ContactsController.swift */; };
 		CE4146781A1B923D0037F03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4146771A1B923D0037F03C /* AppDelegate.swift */; };
 		CE41467A1A1B923D0037F03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4146791A1B923D0037F03C /* ViewController.swift */; };
 		CE41467D1A1B923D0037F03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41467B1A1B923D0037F03C /* Main.storyboard */; };
@@ -115,6 +116,7 @@
 		AB8B2A2123F7604D00A16BF6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		AB8B2A2323F760CF00A16BF6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AB8B2A2523F7610000A16BF6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ABB2E0E923FB151F00C9D012 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		CE4146721A1B923D0037F03C /* Animated Tab Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animated Tab Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4146761A1B923D0037F03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4146771A1B923D0037F03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				AB8B2A2323F760CF00A16BF6 /* LoginView.swift */,
 				AB8B2A2123F7604D00A16BF6 /* LoginController.swift */,
 				AB382D2123F9C48700B5A266 /* MainController.swift */,
+				ABB2E0E923FB151F00C9D012 /* ContactsController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				3950EDDC235497650072BAAD /* Collection+Extensions.swift in Sources */,
 				84BC64221C22E4C800B89B79 /* RAMBadge.swift in Sources */,
 				3950EDD82354950E0072BAAD /* RAMAnimatedTabBarItem.swift in Sources */,
+				ABB2E0EA23FB151F00C9D012 /* ContactsController.swift in Sources */,
 				AB382D2523F9CCE500B5A266 /* AppUser.swift in Sources */,
 				AB27E74423F84CE800D788FF /* SignUpView.swift in Sources */,
 				AB8B2A2623F7610000A16BF6 /* Extensions.swift in Sources */,
