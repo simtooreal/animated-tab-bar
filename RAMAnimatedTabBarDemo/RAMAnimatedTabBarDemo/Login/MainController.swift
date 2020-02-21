@@ -12,7 +12,7 @@ import Contacts
 import Firebase
 import CoreImage
 
-class MainController: UITabBarController {
+class MainController: UIViewController {
     
     private func fetchContacts() {
         let store = CNContactStore()
@@ -135,10 +135,10 @@ class MainController: UITabBarController {
         ref = Database.database().reference()
         view.backgroundColor = .white
         
-        let first = ContactsController.init(nibName: nil, bundle: nil)
-        let second = LoginController.init(nibName: nil, bundle: nil)
-        
-        viewControllers = [first, second]
+//        let first = ContactsController.init(nibName: nil, bundle: nil)
+//        let second = LoginController.init(nibName: nil, bundle: nil)
+//
+//        viewControllers = [first, second]
         
         let quotes = [
             "I Love You ❤️",
@@ -182,15 +182,26 @@ class MainController: UITabBarController {
     
     func findFaces(arrayOfPHAsset: [PHAsset]) {
         print("now we need to find all the different faces")
+        let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
+        let faceDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: accuracy)
+        let options = PHContentEditingInputRequestOptions()
+        options.isNetworkAccessAllowed = true
         for photo in arrayOfPHAsset {
-            let options = PHContentEditingInputRequestOptions()
-            options.isNetworkAccessAllowed = true
-
             photo.requestContentEditingInput(with: options) { (contentEditingInput: PHContentEditingInput?, _) -> Void in
                 let img = CIImage(contentsOf: contentEditingInput!.fullSizeImageURL!)
-                print(img?.properties)
+                let faces = faceDetector?.features(in: img!, options: [CIDetectorSmile:true])
+                if !faces!.isEmpty
+                {
+                    for face in faces as! [CIFaceFeature]
+                    {
+                        let mouthShowing = "\nMouth is showing: \(face.hasMouthPosition)"
+                        print(mouthShowing)
+                    }
+                    print("we've processed a photo")
+                }
             }
         }
+        print("done processing faces")
     }
     
     override func didReceiveMemoryWarning() {
