@@ -1,5 +1,5 @@
 //
-//  ContactsController.swift
+//  ComplimentsController.swift
 //  RAMAnimatedTabBarDemo
 //
 //  Created by Chase J Brignac on 2/20/20.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ContactsController: UIViewController {
+class ComplimentsController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Compliments Controller")
+        view.backgroundColor = .green
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .blue
     }
     
 

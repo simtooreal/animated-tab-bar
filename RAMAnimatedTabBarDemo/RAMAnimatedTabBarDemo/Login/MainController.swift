@@ -12,7 +12,7 @@ import Contacts
 import Firebase
 import CoreImage
 
-class MainController: UIViewController {
+class MainController: UITabBarController {
     
     private func fetchContacts() {
         let store = CNContactStore()
@@ -135,10 +135,21 @@ class MainController: UIViewController {
         ref = Database.database().reference()
         view.backgroundColor = .white
         
-//        let first = ContactsController.init(nibName: nil, bundle: nil)
-//        let second = LoginController.init(nibName: nil, bundle: nil)
-//
-//        viewControllers = [first, second]
+        let firstViewController = SendController()
+                
+        firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 0)
+        
+        let secondViewController = ComplimentsController()
+                
+        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+
+        let thirdViewController = ContactsController()
+
+        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
+
+        let tabBarList = [firstViewController, secondViewController, thirdViewController]
+
+        viewControllers = tabBarList
         
         let quotes = [
             "I Love You ❤️",
@@ -155,7 +166,7 @@ class MainController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(logOut))
         fetchUserInfo()
         fetchContacts()
-        fetchPhotos()
+        //fetchPhotos()
         
     }
     

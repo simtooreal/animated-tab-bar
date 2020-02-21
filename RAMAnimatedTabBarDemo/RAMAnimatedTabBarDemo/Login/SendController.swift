@@ -1,5 +1,5 @@
 //
-//  ContactsController.swift
+//  SendController.swift
 //  RAMAnimatedTabBarDemo
 //
 //  Created by Chase J Brignac on 2/20/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ContactsController: UIViewController {
+class SendController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .blue
+        view.backgroundColor = .red
     }
     
 
