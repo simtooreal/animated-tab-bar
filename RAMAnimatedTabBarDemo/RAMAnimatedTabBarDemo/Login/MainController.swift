@@ -13,6 +13,8 @@ import Firebase
 import CoreImage
 
 class MainController: UITabBarController {
+    var images = [UIImage]()
+    var image = UIImage()
     
     private func fetchContacts() {
         let store = CNContactStore()
@@ -167,7 +169,85 @@ class MainController: UITabBarController {
         fetchUserInfo()
         fetchContacts()
         //fetchPhotos()
-        
+        processPhotos()
+    }
+    
+    func processPhotos() {
+        PHPhotoLibrary.requestAuthorization { status in
+            switch status {
+            case .authorized:
+                // Retreive a list of all localidentifiers for all images in the photo album
+                let allAssets = PHAsset.fetchAssets(with:.image,options:nil)
+                var ids = [String]()
+                allAssets.enumerateObjects({ (object, count, stop) in
+                    ids.append(object.localIdentifier)}
+                )
+                var count = 0
+                for id in ids {
+                    // Get picture retrieves the image from the photo library based on the localIdentifier images size is limited to 300x400
+                    print("we are on id " + id)
+                    print("we are on count " + String(count))
+                    autoreleasepool {
+                        let candidateImage = self.fetchPhotoAtIndex(count, 1, allAssets)
+                        let ciImage =  CIImage(image: candidateImage)
+                        // image processing here
+                    }
+                    count += 1
+                    if count > 10000 {  // just to limit for testing
+                        break
+                    }
+                 
+                }
+            case .denied, .restricted:
+                print("Not allowed")
+            case .notDetermined:
+                // Should not see this when requesting
+                print("Not determined yet")
+            }
+        }
+    }
+    
+//    func getPicture(pictureIdentifier: String, pictureWidth: Int, pictureHeight: Int) -> UIImage {
+//        print("pictureIdentifier: " + pictureIdentifier)
+//        let index = Int(pictureIdentifier)
+//
+//        // Note that if the request is not set to synchronous
+//        // the requestImageForAsset will return both the image
+//        // and thumbnail; by setting synchronous to true it
+//        // will return just the thumbnail
+//        let requestOptions = PHImageRequestOptions()
+//        requestOptions.isSynchronous = true
+//        let fetchOptions = PHFetchOptions()
+//        fetchOptions.sortDescriptors = [NSSortDescriptor(key:"creationDate", ascending: false)]
+//        fetchOptions.fetchLimit = 1
+//        let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: fetchOptions)
+//
+//        PHImageManager.default().requestImage(for: fetchResult.object(at: index!) as PHAsset, targetSize: view.frame.size, contentMode: PHImageContentMode.aspectFill, options: requestOptions, resultHandler: { (image, _) in
+//            if let image = image {
+//                // Add the returned image to your array
+//                return image
+//            }
+//        })
+//        return UIImage(named: "bg5")!
+//    }
+    
+    func fetchPhotoAtIndex(_ index:Int, _ totalImageCountNeeded: Int, _ fetchResult: PHFetchResult<PHAsset>) -> UIImage {
+
+        // Note that if the request is not set to synchronous
+        // the requestImageForAsset will return both the image
+        // and thumbnail; by setting synchronous to true it
+        // will return just the thumbnail
+        let requestOptions = PHImageRequestOptions()
+        requestOptions.isSynchronous = true
+
+        // Perform the image request
+        PHImageManager.default().requestImage(for: fetchResult.object(at: index) as PHAsset, targetSize: view.frame.size, contentMode: PHImageContentMode.aspectFill, options: requestOptions, resultHandler: { (image, _) in
+            if let image = image {
+                // Add the returned image to your array
+                self.image = image
+            }
+        })
+        return self.image
     }
     
     @objc func logOut() {
@@ -199,7 +279,7 @@ class MainController: UITabBarController {
         options.isNetworkAccessAllowed = true
         for photo in arrayOfPHAsset {
             photo.requestContentEditingInput(with: options) { (contentEditingInput: PHContentEditingInput?, _) -> Void in
-                let img = CIImage(contentsOf: contentEditingInput!.fullSizeImageURL!)
+                let img = CIImage(image: contentEditingInput!.displaySizeImage!)
                 let faces = faceDetector?.features(in: img!, options: [CIDetectorSmile:true])
                 if !faces!.isEmpty
                 {
